@@ -30,7 +30,7 @@ export default function Header({ loggedIn, email, onLogout }) {
               <Link
                 className="header__link"
                 onClick={handleAuthClick}
-                to="/sign-in"
+                to="/sign-up"
               >
                 Регистрация
               </Link>
