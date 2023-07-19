@@ -6,6 +6,7 @@ export default function InfoTooltip({ isOpen, onClose, isSuccess }) {
     <div
       className={`popup popup_image ${isOpen && "popup_opened"}`}
       onClick={onClose}
+      пше
     >
       <div
         className="popup__contanier"
@@ -17,7 +18,7 @@ export default function InfoTooltip({ isOpen, onClose, isSuccess }) {
           onClick={onClose}
         />
         <img
-          className=""
+          className="image"
           src={isSuccess ? success : error}
           alt={
             isSuccess

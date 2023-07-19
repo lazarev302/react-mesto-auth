@@ -42,6 +42,7 @@ function App() {
     setDeletePopupOpen(false);
     setIsEditAvatarPopupOpen(false);
     setImagePopup(false);
+    setIsInfoTooltipOpen(false);
   }, []);
 
   const closePopupByEsc = useCallback(
@@ -96,7 +97,6 @@ function App() {
         .then(([dataUser, dataCards]) => {
           setCurrentUser(dataUser);
           setCard(dataCards);
-          // dataCards.forEach(item => item.myId = dataUser._id)
         })
         .catch((err) =>
           console.error(`Ошибка при загрузке начальных данных ${err} `)
@@ -231,7 +231,7 @@ function App() {
       .registration(email, password)
       .then(() => {
         setIsInfoTooltipOpen(true);
-        setIsSeccessAuth(true)
+        setIsSeccessAuth(false);
         navigate("/sign-in");
       })
       .catch((err) => {
