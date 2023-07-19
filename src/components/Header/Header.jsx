@@ -13,6 +13,7 @@ export default function Header({ loggedIn, email, onLogout }) {
       <div className="header__data">
         {loggedIn && <div className="header__email">{email}</div>}
         {loggedIn ? (
+          
           <Link className="header__link" onClick={onLogout} to="/sign-in">
             Выйти
           </Link>
@@ -24,7 +25,7 @@ export default function Header({ loggedIn, email, onLogout }) {
                 onClick={handleAuthClick}
                 to="/sign-in"
               >
-                Выйти
+                Войти
               </Link>
             ) : (
               <Link

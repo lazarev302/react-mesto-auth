@@ -16,7 +16,7 @@ export default function Login({ handleLogin }) {
       <h2 className="login__title">Вход</h2>
       <form className="form__login" onSubmit={handleSubmit}>
         <input
-          className={`  login__input ${errors.email && "form__input_error"}`}
+          className={`login__input ${errors.email && "form__input_error"}`}
           type="email"
           name="email"
           placeholder="Email"
@@ -28,7 +28,7 @@ export default function Login({ handleLogin }) {
         />
         <span className="form__error">{errors.email}</span>
         <input
-          className={` login__input ${errors.password && "form__input_error"}`}
+          className={`login__input ${errors.password && "form__input_error"}`}
           type="password"
           name="password"
           placeholder="Пароль"

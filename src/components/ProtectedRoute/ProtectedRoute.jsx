@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+
 import { Navigate } from "react-router-dom";
 
-const ProtectedRoute = ({ element: Comment, ...props }) => {
+const ProtectedRoute = ({ element: Component, ...props }) => {
   return props.loggedIn ? (
     <Component {...props} />
   ) : (

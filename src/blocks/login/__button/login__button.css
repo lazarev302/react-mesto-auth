@@ -12,7 +12,7 @@
   border: 0;
   box-sizing: border-box;
   padding: 0;
-  margin: 216px auto 37px auto;
+  margin: 216px auto 0px auto;
   opacity: 1;
   transition: opacity 0.2s linear;
   cursor: pointer;

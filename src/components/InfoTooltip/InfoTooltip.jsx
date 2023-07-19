@@ -1,12 +1,23 @@
-import PopupWithForm from "../PopupWithForm/PopupWithForm";
 import success from "../../images/success.png";
 import error from "../../images/error.png";
 
 export default function InfoTooltip({ isOpen, onClose, isSuccess }) {
   return (
-    <>
-      <PopupWithForm name="infoTooltip" isOpen={isOpen} onClose={onClose}>
+    <div
+      className={`popup popup_image ${isOpen && "popup_opened"}`}
+      onClick={onClose}
+    >
+      <div
+        className="popup__contanier"
+        onClick={(evt) => evt.stopPropagation()}
+      >
+        <button
+          className="popup__close-button"
+          type="button"
+          onClick={onClose}
+        />
         <img
+          className=""
           src={isSuccess ? success : error}
           alt={
             isSuccess
@@ -14,7 +25,7 @@ export default function InfoTooltip({ isOpen, onClose, isSuccess }) {
               : "Ошибка при регистрации"
           }
         />
-      </PopupWithForm>
-    </>
+      </div>
+    </div>
   );
 }

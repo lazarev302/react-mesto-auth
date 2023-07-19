@@ -5,7 +5,9 @@
   font-size: 14px;
   line-height: 1.21;
   border: 0;
-  border-bottom: 2px solid rgba(204, 204, 204, 1);
+  border-bottom: 2px solid #CCCCCC;
   width: 358px;
   padding: 0 0 13px 0;
+  background-color: transparent;
+  color: #ffffff;
 }

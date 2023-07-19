@@ -48,7 +48,7 @@ export default function Register({ handleRegister }) {
         </button>
       </form>
       <p className="login__text">
-        Уже зарегистрированы?{" "}
+        Уже зарегистрированы? {" "}
         <Link to="/sign-in" className="login__sign-in">
           Войти
         </Link>
