@@ -1,0 +1,9 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 358px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  margin: 60px auto 0 auto;
+}
